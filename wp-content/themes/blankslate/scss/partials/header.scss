@@ -1,0 +1,25 @@
+// header
+
+#header{
+	width:100%;
+	background: $sidebar;
+	padding:1rem;
+-webkit-box-shadow: 6px 0px 15px -5px rgba(46,46,46,1);
+-moz-box-shadow: 6px 0px 15px -5px rgba(46,46,46,1);
+box-shadow: 6px 0px 15px -5px rgba(46,46,46,1);
+}
+
+
+@media screen and (min-width: 1000px) {
+	#header{
+		order:1;
+		min-height:100vh;
+		max-height:100vh;
+		height:100vh;
+		min-width:20rem;
+		width:20rem;
+		max-width: 20rem;
+		background: $sidebar;
+		padding:1rem;
+	}
+}
