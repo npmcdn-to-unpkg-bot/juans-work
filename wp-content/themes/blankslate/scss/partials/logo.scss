@@ -1,0 +1,48 @@
+#branding{
+	background: $logo-back;
+	margin:0 auto 20px;
+	padding:10px;
+	height:140px;
+	-webkit-box-shadow: 5px 5px 15px -3px rgba(0,0,0,0.75);
+	-moz-box-shadow: 5px 5px 15px -3px rgba(0,0,0,0.75);
+	box-shadow: 5px 5px 15px -3px rgba(0,0,0,0.75);
+	max-width: 290px;
+	a{
+		#logo{
+			border:1px solid $sidebar;
+			height:100%;
+			padding-top:10px;
+			#site-title{
+				position:relative;
+
+					font-family: $logo-font;
+					color: $sidebar;
+					font-size:2.5rem;
+					white-space: nowrap;
+					display:block;
+					text-align:center;
+					padding-top:15px;
+					height:60px;
+
+				span{
+				    font-family: "Khula", sans-serif;
+				    color: #ff9326;
+				    position: absolute;
+				    top: 9px;
+				    left: 50%;
+				    font-size: 40px;
+				    margin-left: -30px;
+				}
+			}
+			#site-description{
+				font-family: $logo-subtext-font;
+				color:#949494;
+				font-weight:bold;
+				font-size:1.6rem;
+				text-align:right;
+				width:221px;
+				margin:0 auto;
+			}
+		}
+	}
+}

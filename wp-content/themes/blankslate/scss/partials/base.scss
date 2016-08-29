@@ -1,0 +1,42 @@
+//These are the base styles
+body{
+	background: $white;
+	color:$grey;
+	max-height:100%;
+}
+html{
+    height:100vh!important;
+}
+
+@media screen and (min-width: 1000px) {
+    #wrapper{
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-align-items: stretch;
+        -webkit-flex-align-items: stretch;
+        -ms-flex-align-items: stretch;
+        align-items: stretch;
+        min-width: 100vw;
+        max-height: 100vh;
+        min-height:100vh;
+        height:100vh;
+        overflow:hidden;
+    }
+    #container{
+        order:2;
+        overflow:auto;
+        flex-grow: 2;
+        min-height:100vh;
+        max-height:100vh;
+        height:100vh;
+        .row.content-wrap{
+            position:relative;
+        }
+    }
+}
