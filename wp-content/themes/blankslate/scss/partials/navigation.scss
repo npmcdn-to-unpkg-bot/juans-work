@@ -1,4 +1,4 @@
-//These are my nav styles
+//These are the styles for the main nav
 aside#sidebar{
 	margin:20px;
 	border-bottom:1px solid $blue;
@@ -28,6 +28,58 @@ aside#sidebar{
 						background:darken($blue, 10%);
 					}
 				}
+			}
+		}
+	}
+}
+
+// Styles for the header nav
+#menu{
+	ul{
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		width: 50%;
+		float: right;
+		li{
+			margin-bottom:10px;
+			margin-right:0;
+			margin-left:0;
+			padding:0;
+			-webkit-box-shadow: 6px 0px 14px -5px rgba(0,0,0,0.75);
+			-moz-box-shadow: 6px 0px 14px -5px rgba(0,0,0,0.75);
+			box-shadow: 6px 0px 14px -5px rgba(0,0,0,0.75);
+
+			background: $sidebar;
+			background: -moz-linear-gradient(left, $sidebar 10%, darken($sidebar, 8%) 100%);
+			background: -webkit-gradient(left top, right top, color-stop(10%, $sidebar), color-stop(100%, darken($sidebar, 8%) ));
+			background: -webkit-linear-gradient(left, $sidebar 10%, darken($sidebar, 8%) 100%);
+			background: -o-linear-gradient(left, $sidebar, darken($sidebar, 8%)  100%);
+			background: -ms-linear-gradient(left, $sidebar 10%, darken($sidebar, 8%)  100%);
+			background: linear-gradient(to right, $sidebar 10%, darken($sidebar, 8%)  100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$sidebar', endColorstr='darken($sidebar, 8%) ', GradientType=1 );
+			transition: all 0.5s ease;
+			a{
+				display:block;
+				padding:10px 15px;
+				color: $white;
+				text-align:right;
+			}
+			&:hover{
+			-webkit-box-shadow: 10px 0px 14px -5px rgba(0,0,0,0.75);
+			-moz-box-shadow: 10px 0px 14px -5px rgba(0,0,0,0.75);
+			box-shadow: 10px 0px 14px -5px rgba(0,0,0,0.75);
+			background: -moz-linear-gradient(left, $sidebar 40%, darken($sidebar, 13%) 100%);
+			background: -webkit-gradient(left top, right top, color-stop(40%, $sidebar), color-stop(100%, darken($sidebar, 13%) ));
+			background: -webkit-linear-gradient(left, $sidebar 40%, darken($sidebar, 13%) 100%);
+			background: -o-linear-gradient(left, $sidebar, darken($sidebar, 13%)  100%);
+			background: -ms-linear-gradient(left, $sidebar 40%, darken($sidebar, 13%)  100%);
+			background: linear-gradient(to right, $sidebar 40%, darken($sidebar, 13%)  100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$sidebar', endColorstr='darken($sidebar, 13%) ', GradientType=1 );
+			transition: all .3s ease;
+			margin-right: -1px;
+			margin-left: 2px;
+
 			}
 		}
 	}

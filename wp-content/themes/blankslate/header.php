@@ -4,7 +4,8 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width" />
 <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>" />
-<link href="https://fonts.googleapis.com/css?family=Khula:800|Wire+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Teko:600|Khula:800|Wire+One" rel="stylesheet">
+<script src="https://use.fontawesome.com/8465e8689d.js"></script>
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
@@ -19,20 +20,11 @@
 			</a>
 		</section>
 		<nav id="menu" role="navigation">
-			<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
-		</nav>
-		<div class="header-footer">
-			<ul class="tech-logos">
-				<li><img src="http://localhost:8000/juans-work/wp-content/themes/blankslate/img/tech-logos/html.png"></li>
-				<li><img src="http://localhost:8000/juans-work/wp-content/themes/blankslate/img/tech-logos/css.png"></li>
-				<li><img src="http://localhost:8000/juans-work/wp-content/themes/blankslate/img/tech-logos/jquery.png"></li>
-				<li><img src="http://localhost:8000/juans-work/wp-content/themes/blankslate/img/tech-logos/angular.png"></li>
-				<li><img src="http://localhost:8000/juans-work/wp-content/themes/blankslate/img/tech-logos/react.png"></li>
-				<li><img src="http://localhost:8000/juans-work/wp-content/themes/blankslate/img/tech-logos/wordpress.png"></li>
-				<li><img src="http://localhost:8000/juans-work/wp-content/themes/blankslate/img/tech-logos/zurb.png"></li>
-				<li><img src="http://localhost:8000/juans-work/wp-content/themes/blankslate/img/tech-logos/drupal.png"></li>
-				<li><img src="http://localhost:8000/juans-work/wp-content/themes/blankslate/img/tech-logos/github.png"></li>
+			<ul>
+				<li><a href="https://www.linkedin.com/in/juanarciniega" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+				<li><a href="https://github.com/arcinjuan" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a></li>
+				<li><a href="/juans-work/wp-content/themes/blankslate/juan_arciniega.pdf" target="_blank"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Resume</a></li>
 			</ul>
-		</div>
+		</nav>
 	</header>
 	<div id="container">

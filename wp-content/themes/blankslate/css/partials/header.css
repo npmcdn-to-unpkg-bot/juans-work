@@ -8,10 +8,10 @@ Error: Undefined variable: "$sidebar".
 4: 	width:100%;
 5: 	background: $sidebar;
 6: 	padding:1rem;
-7: -webkit-box-shadow: 6px 0px 15px -5px rgba(46,46,46,1);
-8: -moz-box-shadow: 6px 0px 15px -5px rgba(46,46,46,1);
-9: box-shadow: 6px 0px 15px -5px rgba(46,46,46,1);
-10: }
+7: 	-webkit-box-shadow: 6px 0px 15px -5px rgba(46,46,46,1);
+8: 	-moz-box-shadow: 6px 0px 15px -5px rgba(46,46,46,1);
+9: 	box-shadow: 6px 0px 15px -5px rgba(46,46,46,1);
+10: 	position: relative;
 
 Backtrace:
 scss/partials/header.scss:5
@@ -67,4 +67,4 @@ scss/partials/header.scss:5
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$sidebar\".\A         on line 5 of scss/partials/header.scss\A \A 1: // header\A 2: \A 3: #header{\A 4: 	width:100%;\A 5: 	background: $sidebar;\A 6: 	padding:1rem;\A 7: -webkit-box-shadow: 6px 0px 15px -5px rgba(46,46,46,1);\A 8: -moz-box-shadow: 6px 0px 15px -5px rgba(46,46,46,1);\A 9: box-shadow: 6px 0px 15px -5px rgba(46,46,46,1);\A 10: }"; }
+  content: "Error: Undefined variable: \"$sidebar\".\A         on line 5 of scss/partials/header.scss\A \A 1: // header\A 2: \A 3: #header{\A 4: 	width:100%;\A 5: 	background: $sidebar;\A 6: 	padding:1rem;\A 7: 	-webkit-box-shadow: 6px 0px 15px -5px rgba(46,46,46,1);\A 8: 	-moz-box-shadow: 6px 0px 15px -5px rgba(46,46,46,1);\A 9: 	box-shadow: 6px 0px 15px -5px rgba(46,46,46,1);\A 10: 	position: relative;"; }
