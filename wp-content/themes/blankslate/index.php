@@ -1,7 +1,7 @@
-<!-- For some reason this is getting wrapped so I had to add addtional closing dives -->
+For some reason this is getting wrapped so I had to add addtional closing dives -->
 
 <?php get_header(); ?>
-<?php get_sidebar(); ?>
+<!-- <?php get_sidebar(); ?> -->
 <div class="row content-wrap">
 	<div class="small-12 columns">
 		<section id="content" role="main">
@@ -14,4 +14,4 @@
 		
 	</div>
 </div>
-<!-- <?php get_footer(); ?> -->
+<?php get_footer(); ?>

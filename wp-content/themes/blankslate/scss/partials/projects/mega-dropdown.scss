@@ -1,0 +1,181 @@
+
+// set colors so you dont have to fuss with the css below
+$primary-color: #544832;
+$secondary-color: #c3b7a2;
+$accent: #4e2a0b;
+
+// set animations for easy speedup / slowdown
+$animation-timing: all 0.5s ease;
+
+
+
+nav#mega-dropdown{
+	background:  $primary-color;
+	position:relative;
+	 ul{
+		margin:0;
+		padding:0;
+		text-align:center;
+		li{
+			display:inline-block;
+			a{
+				color: $secondary-color;
+				display:block;
+				padding:0 20px;
+				line-height:40px;
+				text-decoration: none;
+				vertical-align: bottom;
+				&:hover{
+					color: $primary-color;
+					background: $secondary-color;
+				}
+			}
+		}
+		&.sub{
+			position: absolute;
+			left: 0;
+			top:40px;
+			background:$secondary-color;
+			width:100%;
+			text-align:left;
+			display:none;
+			padding:20px;
+			box-sizing: border-box;
+			li {
+				width:100%;
+				color: $primary-color;
+				.mega-drop-wrapper{
+					width:100%;
+					margin: 0 auto;
+					.mega-drop-columns{
+						float:left;
+						&.text {
+							width: 500px;
+							padding: 0 20px;
+							background: transparent;
+							color: $secondary-color;
+							border-right: 1px solid $primary-color;
+							 .mega-drop-vacations{
+							 	background: Transparent;
+							 	width:100%;
+								ul{
+									li{
+										left:540px;
+										width: 500px;
+										h3{
+											margin-top:0;
+											color:$accent;
+										}
+										&.active{
+											left:0;
+											transition: $animation-timing;
+											display:block;
+										}
+										&.next-mega-image{
+											display:none;
+											left:540px;
+											z-index:0;
+											transition: $animation-timing;
+										}
+										&.prev-mega-image{
+											display:none;
+											left:-540px;
+											z-index:0;
+											transition: $animation-timing
+										}
+										a{
+											display:inline;
+											text-decoration: underline;
+											font-style: italic;
+											margin:0;
+											padding:0;
+											color: $accent;
+										}
+									}
+								}
+							}
+						}
+						#mega-drop-back, #mega-drop-next{
+							cursor: pointer;
+							display: inline-block;
+							background: #fff;
+							padding: 5px 20px;
+							border-radius: 5px;
+							color:  $primary-color;
+							margin-top:10px;
+						}
+						#mega-drop-next{
+							float:right;
+						}
+						.mega-drop-vacations{
+							width:300px;
+							height:200px;
+							text-align:left;
+							overflow:hidden;
+							background:#fff;
+							ul{
+								position: relative;
+								li{
+									position:absolute;
+									top:0;
+									transition: $animation-timing;
+									&.active{
+										left:0;
+										z-index:1;
+										transition: $animation-timing;
+										display:block;
+									}
+									&.next-mega-image{
+										left:301px;
+										z-index:0;
+										transition: $animation-timing;
+									}
+									&.prev-mega-image{
+										left:-301px;
+										z-index:0;
+										transition: $animation-timing;
+									}
+								}
+							}
+						}
+						ul{
+							text-align:left;
+						}
+					}
+					.mega-drop-section{
+						width: 45%;
+						float: right;
+						text-align: left;
+						.dark-column{
+							width:50%;
+							float:left;
+							&:first-of-type{
+								border-right:1px solid $primary-color;
+							}
+							ul{
+								text-align:left;
+								li{
+									h3{
+										color:$accent;;
+										margin-top:0;
+									}
+									a{
+										color:$primary-color;
+										margin:0;
+										padding:0;
+										display:inline;
+										&:hover{
+											color: darken($accent, 20%);
+											background:transparent;
+											cursor:pointer;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

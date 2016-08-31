@@ -1,0 +1,135 @@
+nav#mega-dropdown {
+  background: #544832;
+  position: relative; }
+  nav#mega-dropdown ul {
+    margin: 0;
+    padding: 0;
+    text-align: center; }
+    nav#mega-dropdown ul li {
+      display: inline-block; }
+      nav#mega-dropdown ul li a {
+        color: #c3b7a2;
+        display: block;
+        padding: 0 20px;
+        line-height: 40px;
+        text-decoration: none;
+        vertical-align: bottom; }
+        nav#mega-dropdown ul li a:hover {
+          color: #544832;
+          background: #c3b7a2; }
+    nav#mega-dropdown ul.sub {
+      position: absolute;
+      left: 0;
+      top: 40px;
+      background: #c3b7a2;
+      width: 100%;
+      text-align: left;
+      display: none;
+      padding: 20px;
+      box-sizing: border-box; }
+      nav#mega-dropdown ul.sub li {
+        width: 100%;
+        color: #544832; }
+        nav#mega-dropdown ul.sub li .mega-drop-wrapper {
+          width: 100%;
+          margin: 0 auto; }
+          nav#mega-dropdown ul.sub li .mega-drop-wrapper .mega-drop-columns {
+            float: left; }
+            nav#mega-dropdown ul.sub li .mega-drop-wrapper .mega-drop-columns.text {
+              width: 500px;
+              padding: 0 20px;
+              background: transparent;
+              color: #c3b7a2;
+              border-right: 1px solid #544832; }
+              nav#mega-dropdown ul.sub li .mega-drop-wrapper .mega-drop-columns.text .mega-drop-vacations {
+                background: Transparent;
+                width: 100%; }
+                nav#mega-dropdown ul.sub li .mega-drop-wrapper .mega-drop-columns.text .mega-drop-vacations ul li {
+                  left: 540px;
+                  width: 500px; }
+                  nav#mega-dropdown ul.sub li .mega-drop-wrapper .mega-drop-columns.text .mega-drop-vacations ul li h3 {
+                    margin-top: 0;
+                    color: #4e2a0b; }
+                  nav#mega-dropdown ul.sub li .mega-drop-wrapper .mega-drop-columns.text .mega-drop-vacations ul li.active {
+                    left: 0;
+                    transition: all 0.5s ease;
+                    display: block; }
+                  nav#mega-dropdown ul.sub li .mega-drop-wrapper .mega-drop-columns.text .mega-drop-vacations ul li.next-mega-image {
+                    display: none;
+                    left: 540px;
+                    z-index: 0;
+                    transition: all 0.5s ease; }
+                  nav#mega-dropdown ul.sub li .mega-drop-wrapper .mega-drop-columns.text .mega-drop-vacations ul li.prev-mega-image {
+                    display: none;
+                    left: -540px;
+                    z-index: 0;
+                    transition: all 0.5s ease; }
+                  nav#mega-dropdown ul.sub li .mega-drop-wrapper .mega-drop-columns.text .mega-drop-vacations ul li a {
+                    display: inline;
+                    text-decoration: underline;
+                    font-style: italic;
+                    margin: 0;
+                    padding: 0;
+                    color: #4e2a0b; }
+            nav#mega-dropdown ul.sub li .mega-drop-wrapper .mega-drop-columns #mega-drop-back, nav#mega-dropdown ul.sub li .mega-drop-wrapper .mega-drop-columns #mega-drop-next {
+              cursor: pointer;
+              display: inline-block;
+              background: #fff;
+              padding: 5px 20px;
+              border-radius: 5px;
+              color: #544832;
+              margin-top: 10px; }
+            nav#mega-dropdown ul.sub li .mega-drop-wrapper .mega-drop-columns #mega-drop-next {
+              float: right; }
+            nav#mega-dropdown ul.sub li .mega-drop-wrapper .mega-drop-columns .mega-drop-vacations {
+              width: 300px;
+              height: 200px;
+              text-align: left;
+              overflow: hidden;
+              background: #fff; }
+              nav#mega-dropdown ul.sub li .mega-drop-wrapper .mega-drop-columns .mega-drop-vacations ul {
+                position: relative; }
+                nav#mega-dropdown ul.sub li .mega-drop-wrapper .mega-drop-columns .mega-drop-vacations ul li {
+                  position: absolute;
+                  top: 0;
+                  transition: all 0.5s ease; }
+                  nav#mega-dropdown ul.sub li .mega-drop-wrapper .mega-drop-columns .mega-drop-vacations ul li.active {
+                    left: 0;
+                    z-index: 1;
+                    transition: all 0.5s ease;
+                    display: block; }
+                  nav#mega-dropdown ul.sub li .mega-drop-wrapper .mega-drop-columns .mega-drop-vacations ul li.next-mega-image {
+                    left: 301px;
+                    z-index: 0;
+                    transition: all 0.5s ease; }
+                  nav#mega-dropdown ul.sub li .mega-drop-wrapper .mega-drop-columns .mega-drop-vacations ul li.prev-mega-image {
+                    left: -301px;
+                    z-index: 0;
+                    transition: all 0.5s ease; }
+            nav#mega-dropdown ul.sub li .mega-drop-wrapper .mega-drop-columns ul {
+              text-align: left; }
+          nav#mega-dropdown ul.sub li .mega-drop-wrapper .mega-drop-section {
+            width: 45%;
+            float: right;
+            text-align: left; }
+            nav#mega-dropdown ul.sub li .mega-drop-wrapper .mega-drop-section .dark-column {
+              width: 50%;
+              float: left; }
+              nav#mega-dropdown ul.sub li .mega-drop-wrapper .mega-drop-section .dark-column:first-of-type {
+                border-right: 1px solid #544832; }
+              nav#mega-dropdown ul.sub li .mega-drop-wrapper .mega-drop-section .dark-column ul {
+                text-align: left; }
+                nav#mega-dropdown ul.sub li .mega-drop-wrapper .mega-drop-section .dark-column ul li h3 {
+                  color: #4e2a0b;
+                  margin-top: 0; }
+                nav#mega-dropdown ul.sub li .mega-drop-wrapper .mega-drop-section .dark-column ul li a {
+                  color: #544832;
+                  margin: 0;
+                  padding: 0;
+                  display: inline; }
+                  nav#mega-dropdown ul.sub li .mega-drop-wrapper .mega-drop-section .dark-column ul li a:hover {
+                    color: black;
+                    background: transparent;
+                    cursor: pointer; }
+
+/*# sourceMappingURL=mega-dropdown.css.map */

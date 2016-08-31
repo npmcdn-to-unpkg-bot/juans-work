@@ -2,7 +2,7 @@
 Error: Undefined variable: "$blue".
         on line 4 of scss/partials/navigation.scss
 
-1: //These are my nav styles
+1: //These are the styles for the main nav
 2: aside#sidebar{
 3: 	margin:20px;
 4: 	border-bottom:1px solid $blue;
@@ -70,4 +70,4 @@ scss/partials/navigation.scss:4
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$blue\".\A         on line 4 of scss/partials/navigation.scss\A \A 1: //These are my nav styles\A 2: aside#sidebar{\A 3: 	margin:20px;\A 4: 	border-bottom:1px solid $blue;\A 5: 	text-align:center;\A 6: 	ul.sidebar-widgets{\A 7: 		list-style: none;\A 8: 		text-align: center;\A 9: 		margin:0;"; }
+  content: "Error: Undefined variable: \"$blue\".\A         on line 4 of scss/partials/navigation.scss\A \A 1: //These are the styles for the main nav\A 2: aside#sidebar{\A 3: 	margin:20px;\A 4: 	border-bottom:1px solid $blue;\A 5: 	text-align:center;\A 6: 	ul.sidebar-widgets{\A 7: 		list-style: none;\A 8: 		text-align: center;\A 9: 		margin:0;"; }

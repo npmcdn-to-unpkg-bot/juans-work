@@ -1,0 +1,57 @@
+.j-slider{
+	position:relative;
+	padding:0;
+	margin:20px auto;
+}
+ .j-slider .slides, .j-slider li{
+	list-style: none;
+	position:absolute;
+	top:0;
+	left:0;
+	padding:0;
+	margin:0;
+	transition: all 0.5s ease;
+	opacity:0;
+}
+
+span[class^="j-slide"] {
+	border: 1px solid #333;
+	background: #333;
+	color: #ccc;
+	border-radius: 5px;
+	cursor:pointer;
+	padding: 5px 15px;	
+	display:inline-block;
+	position:absolute;
+	z-index:5;
+}
+span[class^="j-slide"]:hover {
+	color:#333;
+	background:#ccc;
+}
+.j-slide-back{
+	left:0px;
+	bottom: -50px;
+
+}
+.j-slide-next{
+	right: 0;
+	bottom: -50px;
+}
+.slides.active{
+	z-index: 10;
+}
+.previous-slide.active, .next-slide.active, .previous-slide, .next-slide{
+	z-index: 9;
+}
+.j-slider .next-slide.slides{
+	left: 600px;
+	opacity:0;
+}
+.j-slider .previous-slide.slides{
+	left: -600px;
+	opacity:0;
+}
+.j-slider .active.slides{
+	opacity:1;
+}
