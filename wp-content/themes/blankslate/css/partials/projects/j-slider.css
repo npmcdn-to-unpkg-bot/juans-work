@@ -42,7 +42,7 @@ span[class^="j-slide"]:hover {
 .previous-slide.active, .next-slide.active, .previous-slide, .next-slide {
   z-index: 9; }
 
-.j-slider .next-slide.slides {
+.j-slider .next-slide.slides, .j-slider .next-slide.slides.active {
   left: 600px;
   opacity: 0; }
 

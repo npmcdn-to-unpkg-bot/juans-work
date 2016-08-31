@@ -4251,13 +4251,22 @@ html {
 
 h3, h2, h1 {
   font-family: "Teko", sans-serif;
-  color: #3b4c68; }
+  color: #d96d00; }
 
-.entry-title {
+.header h1.entry-title {
   display: none; }
+
+a {
+  color: #445878;
+  font-weight: bold; }
+  a:hover {
+    color: #283447; }
 
 .accent {
   color: #ff9326; }
+
+.project-container {
+  margin-bottom: 100px; }
 
 ul.tech-logos {
   margin: 0;
@@ -4313,7 +4322,8 @@ ul.tech-logos {
     flex-grow: 2;
     min-height: 100vh;
     max-height: 100vh;
-    height: 100vh; }
+    height: 100vh;
+    padding-bottom: 100px; }
     #container .row.content-wrap {
       position: relative; } }
 #header {
@@ -4337,7 +4347,7 @@ ul.tech-logos {
     background: #445878;
     padding: 1rem; } }
 aside#sidebar {
-  margin: 20px;
+  margin: 50px 20px 20px;
   border-bottom: 1px solid #445878;
   text-align: center; }
   aside#sidebar ul.sidebar-widgets {
@@ -4355,9 +4365,8 @@ aside#sidebar {
           color: #eeeff7;
           background: #445878;
           border-radius: 10px;
-          width: 76px;
           margin-bottom: 15px;
-          padding: 5px; }
+          padding: 10px 25px; }
           aside#sidebar ul.sidebar-widgets .menu li.menu-item a:hover {
             background: #324057; }
 
@@ -4582,7 +4591,7 @@ span[class^="j-slide"]:hover {
 .previous-slide.active, .next-slide.active, .previous-slide, .next-slide {
   z-index: 9; }
 
-.j-slider .next-slide.slides {
+.j-slider .next-slide.slides, .j-slider .next-slide.slides.active {
   left: 600px;
   opacity: 0; }
 

@@ -1,6 +1,6 @@
 //These are the styles for the main nav
 aside#sidebar{
-	margin:20px;
+	margin: 50px 20px 20px;
 	border-bottom:1px solid $blue;
 	text-align:center;
 	ul.sidebar-widgets{
@@ -21,9 +21,8 @@ aside#sidebar{
 					color:$white;
 					background: $blue;
 					border-radius: 10px;
-					width: 76px;
 					margin-bottom: 15px;
-					padding: 5px;
+					padding: 10px 25px;
 					&:hover{
 						background:darken($blue, 10%);
 					}
