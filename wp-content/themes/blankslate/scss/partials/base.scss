@@ -9,13 +9,23 @@ html{
 }
 h3, h2, h1{
     font-family:$custom;
-    color: darken($sidebar, 5%);
+    color: darken($accent, 15%);
 }
-.entry-title{
+.header h1.entry-title{
     display:none;
+}
+a{
+    color:$sidebar;
+    font-weight:bold;
+    &:hover{
+        color: darken($sidebar, 15%);
+    }
 }
 .accent{
     color: $accent;
+}
+.project-container{
+    margin-bottom:100px;
 }
 
 ul.tech-logos{
@@ -77,6 +87,7 @@ ul.tech-logos{
         min-height:100vh;
         max-height:100vh;
         height:100vh;
+        padding-bottom: 100px;
         .row.content-wrap{
             position:relative;
         }

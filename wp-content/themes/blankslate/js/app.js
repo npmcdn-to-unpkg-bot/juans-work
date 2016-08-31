@@ -1,74 +1,86 @@
+$(document).ready( function(){
+
+// Find  the width of the images
+var imgWidth = $(".j-slider li img").width();
+var imgHeight = $(".j-slider li img").height();
+
+// Turn all li's into slides
+$(".j-slider li").addClass("slider-image slides");
 
 
-// Drop Down Menu
-$(".drop").hover(
-	function(){
-		$(this).children(".sub").slideDown(200);
-	},
-	function(){
-		$(this).children(".sub").slideUp(200);
+
+// Add the height and width to the gallery based in the image dimensions
+$("head").append("<style type='text/css'>.j-slider, .slides {width: "+imgWidth+"px; height: "+imgHeight+"px;overflow:visible}</style>");
+
+// Add nav buttons
+$(".j-slider").append("<span class='j-slide-back'>Back</span><span class='j-slide-next'> Next</span>");
+
+// Add class of active to the first image only once
+$(".j-slider li:first-of-type").one().addClass("active");
+
+// Add the proper classes to maintain order
+var properOrder = function(){
+	// Add a class of next slide to the next slide
+	$(".active").next("li").addClass("next-slide");
+
+	// Add a class of previous-slide slide to the previous slide
+	$(".active").prev("li").addClass("previous-slide");
+}
+// Set prev to last li when first li is active
+var properRotate = function(){
+	// Locate the first image
+	var firstImg = $(".j-slider li:first-of-type");
+
+	// Locate last image
+	var lastImg = $(".j-slider li:last-of-type");
+
+	// Switch classes depending on direction of slide
+	if ($(firstImg).hasClass("active")){
+		$(lastImg).addClass("previous-slide");
 	}
 
-);
-
-
-
-// set the images in order
-function setMegaOrder(){
-	// the image thats next to the active image will always be on the right
-	$(".mega-drop-slider li.active").next().addClass("next-mega-image").fadeOut();
-	// the image thats prior to the active image will always be on the left
-	$(".mega-drop-slider li.active").prev().addClass("prev-mega-image").fadeOut();
-
-	// if the active image is the first image (and has no prior images)
-	if ($(".mega-drop-slider li.active").is(":first-of-type")){
-		// set the last image in the list to the prev image
-		$(".mega-drop-slider li:last-of-type").addClass("prev-mega-image").fadeOut();
-	// if the active image is the last image (and has no next image)
-	} else if ($(".mega-drop-slider li.active").is(":last-of-type"))
-	{
-		// set the first image to be next
-		$(".mega-drop-slider li:first-of-type").addClass("next-mega-image").fadeOut();
-	}
-	// otherwise
-	else
-	{
-		// do nothing :)
+	// Switch classes depending on direction of slide
+	if ($(lastImg).hasClass("active")){
+		$(firstImg).addClass("next-slide");
 	}
 }
-
-// move forward functionality
-function megaNextAction(){
-	$(".mega-drop-columns.text .active").css("display","none");
-	$(".active").addClass("prev-mega-image").removeClass("active").fadeOut();
-	$(".next-mega-image").addClass("active").removeClass("next-mega-image").fadeIn();
-	$(".prev-mega-image").removeClass("prev-mega-image").fadeOut();
-	$(".mega-drop-columns.text .active").css("display","block");
-	setMegaOrder();
+// Clear all inline styles
+var clearInline = function(){
+	$(".next-slide").css("left", "auto");
 }
+// add functionality to the back button
+$(".j-slide-back").bind("click" , function(){
 
-// move backwards functionality
-function megaBackAction(){
-	$(".mega-drop-columns:last-of-type .active").css("display","none");
-	$(".active").addClass("next-mega-image").removeClass("active").fadeOut();
-	$(".prev-mega-image").addClass("active").removeClass("prev-mega-image").fadeIn();
-	$(".next-mega-image").removeClass("next-mega-image").fadeOut();
-	$(".mega-drop-columns:last-of-type .active").css("display","block");
-	setMegaOrder();
-}
+	// clear next slide
+	$(".next-slide").removeClass("next-slide");
+	// create new next slide
+	$(".active").removeClass("active").addClass("next-slide");
+	// create new active slide
+	$(".previous-slide").addClass("active").removeClass("previous-slide");
 
-// connect the next button to the move forward functionality
-$("#mega-drop-next").click(function(){
-	megaNextAction();
+	//make sure everything gets put in the proper order
+ 	properOrder();
+ 	// if we hit the end or beginning of the list, set the proper pattern
+	properRotate();
+ 	return false;
 });
+// add functionality to the next button
+$(".j-slide-next").bind("click",  function(){
+	// clear previous slide
+	$(".previous-slide").removeClass("previous-slide");
+	// create new previous slide
+	$(".active").addClass("previous-slide").removeClass("active");
+	// create new active slide
+	$(".next-slide").addClass("active").removeClass("next-slide");
 
-// connect the back button to the move back functionality
-$("#mega-drop-back").click(function(){
-	megaBackAction();
+	//make sure everything gets put in the proper 
+ 	properOrder();
+ 	// if we hit the end or beginning of the list, set the proper pattern
+	properRotate();
+ 	return false;
 });
-
-// set the first image in the slider to active
-$(".mega-drop-slider li:first-of-type").addClass("active");
-
-// put the rest of the images in order
-setMegaOrder();
+//make sure everything gets put in the proper 
+properOrder();
+// if we hit the end or beginning of the list, set the proper pattern
+properRotate();
+});
