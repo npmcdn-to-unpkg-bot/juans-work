@@ -19,6 +19,39 @@
 				</div>
 			</a>
 		</section>
+		<div class="text-fade">
+		<p>$(document).ready( function(){ <br />
+		// Find the width of the images<br />
+		 var imgWidth = $(&quot;.j-slider li img&quot;).width(); <br />
+		 var imgHeight = $(&quot;.j-slider li img&quot;).height();  <br />
+		 // Turn all li's into slides  <br />
+		 $(&quot;.j-slider li&quot;).addClass(&quot;slider-image slides&quot;);  <br />
+		 // Add the height and width to the gallery based in the image dimensions  <br />
+		 // Add the proper classes to maintain order <br />
+		 var properOrder = function(){ <br />
+		 // Add a class of next slide to the next slide <br />
+		 $(&quot;.active&quot;).next(&quot;li&quot;).addClass(&quot;next-slide&quot;); <br />
+		 // Add a class of previous-slide slide to the previous slide <br />
+		 $(&quot;.active&quot;).prev(&quot;li&quot;).addClass(&quot;previous-slide&quot;); } <br />
+		 // Set prev to last li when first li is active <br />
+		 var properRotate = function(){ <br />
+		 // Locate the first image <br />
+		 var firstImg = $(&quot;.j-slider li:first-of-type&quot;); <br />
+		 // Locate last image var lastImg = $(&quot;.j-slider li:last-of-type&quot;); <br />
+		 // Switch classes depending on direction of slide <br />
+		 if ($(firstImg).hasClass(&quot;active&quot;)){ <br />
+		 $(lastImg).addClass(&quot;previous-slide&quot;); <br />
+		 } <br />
+		 // Switch classes depending on direction of slide <br />
+		 if ($(lastImg).hasClass(&quot;active&quot;)){ <br />
+		 $(firstImg).addClass(&quot;next-slide&quot;); } <br />
+		 } <br />
+		 // Clear all inline styles <br />
+		 var clearInline = function(){ <br />
+		 $(&quot;.next-slide&quot;).css(&quot;left&quot;, &quot;auto&quot;); <br />
+		 }</p>
+		<div class="fade"></div>
+		</div>
 		<nav id="menu" role="navigation">
 			<ul>
 				<li><a href="https://www.linkedin.com/in/juanarciniega" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
@@ -26,5 +59,7 @@
 				<li><a href="/juans-work/wp-content/themes/blankslate/juan_arciniega.pdf" target="_blank"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Resume</a></li>
 			</ul>
 		</nav>
+		<div id="decoration"></div>
+		<div id="decoration2"></div>
 	</header>
 	<div id="container">

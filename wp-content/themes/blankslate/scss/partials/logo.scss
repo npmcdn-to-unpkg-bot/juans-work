@@ -8,6 +8,18 @@
 	box-shadow: 5px 5px 15px -3px rgba(0,0,0,0.75);
 	max-width: 290px;
 	a{
+		&:hover{
+			#logo{
+				#site-title{
+					span{	
+						-ms-transform: rotate(-20deg); /* IE 9 */
+						-webkit-transform: rotate(-20deg); /* Safari */
+						transform: rotate(-20deg);
+						transition: all 0.5s ease;
+					}
+				}
+			}
+		}
 		#logo{
 			border:1px solid $sidebar;
 			height:100%;
@@ -32,6 +44,10 @@
 				    left: 50%;
 				    font-size: 40px;
 				    margin-left: -30px;
+					-ms-transform: rotate(0deg); /* IE 9 */
+					-webkit-transform: rotate(0deg); /* Safari */
+					transform: rotate(0deg);
+					transition: all 0.5s ease;
 				}
 			}
 			#site-description{

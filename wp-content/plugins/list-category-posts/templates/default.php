@@ -64,6 +64,9 @@ while ( have_posts() ):
   //Start a List Item for each post:
   $lcp_display_output .= "<li>";
 
+    //Post Thumbnail
+  $lcp_display_output .= $this->get_thumbnail($post);
+
   //Show the title and link to the post:
   $lcp_display_output .= $this->get_post_title($post, 'h3', 'lcp_post');
 
@@ -81,9 +84,6 @@ while ( have_posts() ):
 
   //Custom fields:
   $lcp_display_output .= $this->get_custom_fields($post);
-
-  //Post Thumbnail
-  $lcp_display_output .= $this->get_thumbnail($post);
 
   /**
    * Post content - Example of how to use tag and class parameters:

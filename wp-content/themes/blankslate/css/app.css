@@ -4210,6 +4210,13 @@ table.hover tr:nth-of-type(even):hover {
   -moz-box-shadow: 5px 5px 15px -3px rgba(0, 0, 0, 0.75);
   box-shadow: 5px 5px 15px -3px rgba(0, 0, 0, 0.75);
   max-width: 290px; }
+  #branding a:hover #logo #site-title span {
+    -ms-transform: rotate(-20deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-20deg);
+    /* Safari */
+    transform: rotate(-20deg);
+    transition: all 0.5s ease; }
   #branding a #logo {
     border: 1px solid #445878;
     height: 100%;
@@ -4231,7 +4238,13 @@ table.hover tr:nth-of-type(even):hover {
         top: 9px;
         left: 50%;
         font-size: 40px;
-        margin-left: -30px; }
+        margin-left: -30px;
+        -ms-transform: rotate(0deg);
+        /* IE 9 */
+        -webkit-transform: rotate(0deg);
+        /* Safari */
+        transform: rotate(0deg);
+        transition: all 0.5s ease; }
     #branding a #logo #site-description {
       font-family: "Wire One", sans-serif;
       color: #949494;
@@ -4266,7 +4279,9 @@ a {
   color: #ff9326; }
 
 .project-container {
-  margin-bottom: 100px; }
+  margin-bottom: 40px;
+  overflow: hidden;
+  padding-bottom: 60px; }
 
 ul.tech-logos {
   margin: 0;
@@ -4274,7 +4289,9 @@ ul.tech-logos {
   list-style: none;
   text-align: center;
   background: #fff;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  border-radius: 0 0 5px 5px;
+  border-top: 1px solid #eeeff7; }
   ul.tech-logos li {
     display: inline-block; }
     ul.tech-logos li img {
@@ -4282,18 +4299,57 @@ ul.tech-logos {
       margin: 10px 50px; }
     ul.tech-logos li span {
       display: inline-block;
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      background: #eeeff7;
+      color: #445878;
+      padding: 2px 10px;
+      border-radius: 8px;
+      font-size: .9em; }
 
 .tech-header {
-  background: #567099;
+  border-bottom: 1px solid #fff;
+  background: #1b2426;
   text-align: center;
   color: #eeeff7;
   margin-bottom: 0;
   padding: 10px;
   font-size: 25px;
-  font-family: "Teko", sans-serif; }
+  font-family: "Teko", sans-serif;
+  border-radius: 5px 5px 0 0; }
 
 #comments {
+  display: none; }
+
+ul.lcp_catlist {
+  margin: 0;
+  list-style: none; }
+  ul.lcp_catlist li {
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    background: #fff;
+    border-radius: 5px;
+    padding: 0px;
+    min-height: 235px;
+    vertical-align: top;
+    margin: 10px;
+    position: relative; }
+    ul.lcp_catlist li a {
+      position: absolute;
+      display: block;
+      width: 100%; }
+      ul.lcp_catlist li a img {
+        border-radius: 5px 5px 0 0; }
+      ul.lcp_catlist li a:first-of-type {
+        bottom: 0;
+        height: 70px; }
+      ul.lcp_catlist li a:last-of-type {
+        top: 0; }
+
+.post-edit-link {
+  display: none; }
+
+#wpadminbar {
   display: none; }
 
 @media screen and (min-width: 1000px) {
@@ -4334,6 +4390,47 @@ ul.tech-logos {
   -moz-box-shadow: 6px 0px 15px -5px #2e2e2e;
   box-shadow: 6px 0px 15px -5px #2e2e2e;
   position: relative; }
+  #header #decoration {
+    width: 0;
+    height: 0;
+    border-left: 0px solid transparent;
+    border-right: 200px solid transparent;
+    border-bottom: 200px solid #1b2426;
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+  #header #decoration2 {
+    width: 0;
+    height: 0;
+    border-left: 120px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 110px solid #1b2426;
+    position: absolute;
+    bottom: 0;
+    right: 0; }
+
+.text-fade {
+  color: #a9aed6;
+  font-size: 12px;
+  position: relative;
+  overflow: hidden;
+  max-height: 30%;
+  z-index: 0; }
+  .text-fade .fade {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#445878+0,445878+100&0+0,1+100 */
+    background: -moz-linear-gradient(top, rgba(68, 88, 120, 0) 10%, #445878 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(68, 88, 120, 0) 10%, #445878 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(68, 88, 120, 0) 10%, #445878 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00445878', endColorstr='#445878',GradientType=0 );
+    /* IE6-9 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
 
 @media screen and (min-width: 1000px) {
   #header {
@@ -4375,7 +4472,11 @@ aside#sidebar {
   margin: 0;
   list-style: none;
   width: 50%;
-  float: right; }
+  position: absolute;
+  bottom: 80px;
+  transform: rotate(-45deg);
+  left: 60px;
+  z-index: 100; }
   #menu ul li {
     margin-bottom: 10px;
     margin-right: 0;
@@ -4398,6 +4499,10 @@ aside#sidebar {
       padding: 10px 15px;
       color: #eeeff7;
       text-align: right; }
+      #menu ul li a i {
+        color: #ff9326; }
+      #menu ul li a:hover i {
+        color: #ffac59; }
     #menu ul li:hover {
       -webkit-box-shadow: 10px 0px 14px -5px rgba(0, 0, 0, 0.75);
       -moz-box-shadow: 10px 0px 14px -5px rgba(0, 0, 0, 0.75);
@@ -4547,59 +4652,71 @@ nav#mega-dropdown {
                     background: transparent;
                     cursor: pointer; }
 
+/* the ul will be set to relative to set the images inside of it to absolute */
 .j-slider {
   position: relative;
   padding: 0;
-  margin: 20px auto; }
-
-.j-slider .slides, .j-slider li {
-  list-style: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 0;
-  margin: 0;
-  transition: all 0.5s ease;
-  opacity: 0; }
-
-span[class^="j-slide"] {
-  border: 1px solid #333;
-  background: #333;
-  color: #ccc;
-  border-radius: 5px;
-  cursor: pointer;
-  padding: 5px 15px;
-  display: inline-block;
-  position: absolute;
-  z-index: 5; }
-
-span[class^="j-slide"]:hover {
-  color: #333;
-  background: #ccc; }
-
-.j-slide-back {
-  left: 0px;
-  bottom: -50px; }
-
-.j-slide-next {
-  right: 0;
-  bottom: -50px; }
-
-.slides.active {
-  z-index: 10; }
-
-.previous-slide.active, .next-slide.active, .previous-slide, .next-slide {
-  z-index: 9; }
-
-.j-slider .next-slide.slides, .j-slider .next-slide.slides.active {
-  left: 600px;
-  opacity: 0; }
-
-.j-slider .previous-slide.slides {
-  left: -600px;
-  opacity: 0; }
-
-.j-slider .active.slides {
-  opacity: 1; }
+  margin: 20px auto;
+  /* set all images to stack above each other at 
+  the top right corner of the ul. set opacity to 0
+  and transitions to half a second for nice 
+  fade in effect without js */
+  /*  set styles for all spans beginning 
+  with 'j-slide' (to target the buttons) */
+  /* position the buttons */ }
+  .j-slider .slides, .j-slider li {
+    list-style: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    transition: left 0.5s ease, opacity 0.3s ease;
+    opacity: 0;
+    /* position the next slide */
+    /* position the previous slide */
+    /* make active slide sit on top visibly */
+    /* ...and after transitions*/ }
+    .j-slider .slides.next-slide, .j-slider li.next-slide {
+      left: 600px;
+      opacity: 0; }
+    .j-slider .slides.previous-slide, .j-slider li.previous-slide {
+      left: -600px;
+      opacity: 0; }
+    .j-slider .slides.active, .j-slider li.active {
+      z-index: 10;
+      opacity: 1;
+      /* position the next slide (during transition) */
+      /* position the previous slide (during transition) */
+      /* make sure non active slides sit back 
+      during transitions... */ }
+      .j-slider .slides.active.next-slide, .j-slider li.active.next-slide {
+        left: 600px;
+        opacity: 0; }
+      .j-slider .slides.active.previous-slide, .j-slider li.active.previous-slide {
+        left: -600px;
+        opacity: 0; }
+      .j-slider .slides.active.previous-slide, .j-slider .slides.active.next-slide, .j-slider li.active.previous-slide, .j-slider li.active.next-slide {
+        z-index: 9; }
+    .j-slider .slides.previous-slide, .j-slider .slides.next-slide, .j-slider li.previous-slide, .j-slider li.next-slide {
+      z-index: 9; }
+  .j-slider span[class^="j-slide"] {
+    border: 1px solid #333;
+    background: #333;
+    color: #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 15px;
+    display: inline-block;
+    position: absolute;
+    bottom: -50px;
+    z-index: 5; }
+    .j-slider span[class^="j-slide"] :hover {
+      color: #333;
+      background: #ccc; }
+  .j-slider .j-slide-back {
+    left: 0; }
+  .j-slider .j-slide-next {
+    right: 0; }
 
 /*# sourceMappingURL=app.css.map */
