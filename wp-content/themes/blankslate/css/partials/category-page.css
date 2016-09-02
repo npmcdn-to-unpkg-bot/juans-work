@@ -1,23 +1,57 @@
 /*
 Error: Undefined variable: "$sidebar".
-        on line 5 of scss/partials/header.scss
+        on line 11 of scss/partials/category-page.scss
 
-1: // header
-2: 
-3: #header{
-4: 	width:100%;
-5: 	background: $sidebar;
-6: 	padding:1rem;
-7: 	-webkit-box-shadow: 6px 0px 15px -5px rgba(46,46,46,1);
-8: 	-moz-box-shadow: 6px 0px 15px -5px rgba(46,46,46,1);
-9: 	box-shadow: 6px 0px 15px -5px rgba(46,46,46,1);
-10: 	position: relative;	
+6: 		margin:5px;
+7: 		article{
+8: 			h2.entry-title{
+9: 				font-size:1.5em;
+10: 				margin:5px 0 40px;
+11: 				background: $sidebar;
+12: 				width: 309px;
+13: 				display:inline-block;
+14: 				text-align:center;
+15: 				padding:5px 0;
+16: 				a{
 
 Backtrace:
-scss/partials/header.scss:5
+scss/partials/category-page.scss:11
 /Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
 /Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `map'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `map'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `map'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
 /Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
 /Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
 /Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
@@ -67,4 +101,4 @@ scss/partials/header.scss:5
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$sidebar\".\A         on line 5 of scss/partials/header.scss\A \A 1: // header\A 2: \A 3: #header{\A 4: 	width:100%;\A 5: 	background: $sidebar;\A 6: 	padding:1rem;\A 7: 	-webkit-box-shadow: 6px 0px 15px -5px rgba(46,46,46,1);\A 8: 	-moz-box-shadow: 6px 0px 15px -5px rgba(46,46,46,1);\A 9: 	box-shadow: 6px 0px 15px -5px rgba(46,46,46,1);\A 10: 	position: relative;	"; }
+  content: "Error: Undefined variable: \"$sidebar\".\A         on line 11 of scss/partials/category-page.scss\A \A 6: 		margin:5px;\A 7: 		article{\A 8: 			h2.entry-title{\A 9: 				font-size:1.5em;\A 10: 				margin:5px 0 40px;\A 11: 				background: $sidebar;\A 12: 				width: 309px;\A 13: 				display:inline-block;\A 14: 				text-align:center;\A 15: 				padding:5px 0;\A 16: 				a{"; }

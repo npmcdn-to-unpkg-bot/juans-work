@@ -860,19 +860,19 @@ function wp_admin_bar_header() { ?>
  * Default admin bar callback.
  *
  * @since 3.1.0
- 
+ */
 function _admin_bar_bump_cb() { ?>
 <style type="text/css" media="screen">
-	html { margin-top: 32px !important; }
-	* html body { margin-top: 32px !important; }
-	@media screen and ( max-width: 782px ) {
-		html { margin-top: 46px !important; }
-		* html body { margin-top: 46px !important; }
+	html { margin-top: 0px !important; }
+	* html body { margin-top: 0px !important; }
+	@media screen and ( max-width: auto;) {
+		html { margin-top: 0px !important; }
+		* html body { margin-top: 0px !important; }
 	}
 </style>
 <?php
 }
-*/
+
 
 /**
  * Sets the display status of the admin bar.

@@ -41,9 +41,9 @@ ul.tech-logos{
     border-top:1px solid $white;
     li{
         display:inline-block;
-        img{
-                max-width: 100px;
-                margin: 10px 50px;
+        img{    
+            max-width: 75px;
+            margin: 20px 20px;
         }
         span{
             display: inline-block;
@@ -135,6 +135,15 @@ ul.lcp_catlist {
         padding-bottom: 100px;
         .row.content-wrap{
             position:relative;
+        }
+    }
+    ul.tech-logos{
+        li{
+            display:inline-block;
+            img{
+                    max-width: 100px;
+                    margin: 10px 50px;
+            }
         }
     }
 }

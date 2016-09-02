@@ -4295,8 +4295,8 @@ ul.tech-logos {
   ul.tech-logos li {
     display: inline-block; }
     ul.tech-logos li img {
-      max-width: 100px;
-      margin: 10px 50px; }
+      max-width: 75px;
+      margin: 20px 20px; }
     ul.tech-logos li span {
       display: inline-block;
       margin-bottom: 10px;
@@ -4381,7 +4381,13 @@ ul.lcp_catlist {
     height: 100vh;
     padding-bottom: 100px; }
     #container .row.content-wrap {
-      position: relative; } }
+      position: relative; }
+
+  ul.tech-logos li {
+    display: inline-block; }
+    ul.tech-logos li img {
+      max-width: 100px;
+      margin: 10px 50px; } }
 #header {
   width: 100%;
   background: #445878;
@@ -4390,24 +4396,6 @@ ul.lcp_catlist {
   -moz-box-shadow: 6px 0px 15px -5px #2e2e2e;
   box-shadow: 6px 0px 15px -5px #2e2e2e;
   position: relative; }
-  #header #decoration {
-    width: 0;
-    height: 0;
-    border-left: 0px solid transparent;
-    border-right: 200px solid transparent;
-    border-bottom: 200px solid #1b2426;
-    position: absolute;
-    bottom: 0;
-    left: 0; }
-  #header #decoration2 {
-    width: 0;
-    height: 0;
-    border-left: 120px solid transparent;
-    border-right: 0px solid transparent;
-    border-bottom: 110px solid #1b2426;
-    position: absolute;
-    bottom: 0;
-    right: 0; }
 
 .text-fade {
   color: #a9aed6;
@@ -4415,7 +4403,8 @@ ul.lcp_catlist {
   position: relative;
   overflow: hidden;
   max-height: 30%;
-  z-index: 0; }
+  z-index: 0;
+  display: none; }
   .text-fade .fade {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#445878+0,445878+100&0+0,1+100 */
     background: -moz-linear-gradient(top, rgba(68, 88, 120, 0) 10%, #445878 100%);
@@ -4440,9 +4429,27 @@ ul.lcp_catlist {
     height: 100vh;
     min-width: 20rem;
     width: 20rem;
-    max-width: 20rem;
-    background: #445878;
-    padding: 1rem; } }
+    max-width: 20rem; }
+    #header .text-fade {
+      display: block; }
+    #header #decoration {
+      width: 0;
+      height: 0;
+      border-left: 0px solid transparent;
+      border-right: 200px solid transparent;
+      border-bottom: 200px solid #1b2426;
+      position: absolute;
+      bottom: 0;
+      left: 0; }
+    #header #decoration2 {
+      width: 0;
+      height: 0;
+      border-left: 120px solid transparent;
+      border-right: 0px solid transparent;
+      border-bottom: 110px solid #1b2426;
+      position: absolute;
+      bottom: 0;
+      right: 0; } }
 aside#sidebar {
   margin: 50px 20px 20px;
   border-bottom: 1px solid #445878;
@@ -4471,12 +4478,7 @@ aside#sidebar {
   padding: 0;
   margin: 0;
   list-style: none;
-  width: 50%;
-  position: absolute;
-  bottom: 80px;
-  transform: rotate(-45deg);
-  left: 60px;
-  z-index: 100; }
+  text-align: center; }
   #menu ul li {
     margin-bottom: 10px;
     margin-right: 0;
@@ -4493,7 +4495,8 @@ aside#sidebar {
     background: -ms-linear-gradient(left, #445878 10%, #35455e 100%);
     background: linear-gradient(to right, #445878 10%, #35455e 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$sidebar', endColorstr='darken($sidebar, 8%) ', GradientType=1 );
-    transition: all 0.5s ease; }
+    transition: all 0.5s ease;
+    display: inline-block; }
     #menu ul li a {
       display: block;
       padding: 10px 15px;
@@ -4517,6 +4520,77 @@ aside#sidebar {
       transition: all .3s ease;
       margin-right: -1px;
       margin-left: 2px; }
+
+@media screen and (min-width: 1000px) {
+  #menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 50%;
+    position: absolute;
+    bottom: 80px;
+    transform: rotate(-45deg);
+    left: 60px;
+    z-index: 100; }
+    #menu ul li {
+      margin-bottom: 10px;
+      margin-right: 0;
+      margin-left: 0;
+      padding: 0;
+      -webkit-box-shadow: 6px 0px 14px -5px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 6px 0px 14px -5px rgba(0, 0, 0, 0.75);
+      box-shadow: 6px 0px 14px -5px rgba(0, 0, 0, 0.75);
+      background: #445878;
+      background: -moz-linear-gradient(left, #445878 10%, #35455e 100%);
+      background: -webkit-gradient(left top, right top, color-stop(10%, #445878), color-stop(100%, #35455e));
+      background: -webkit-linear-gradient(left, #445878 10%, #35455e 100%);
+      background: -o-linear-gradient(left, #445878, #35455e 100%);
+      background: -ms-linear-gradient(left, #445878 10%, #35455e 100%);
+      background: linear-gradient(to right, #445878 10%, #35455e 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$sidebar', endColorstr='darken($sidebar, 8%) ', GradientType=1 );
+      transition: all 0.5s ease;
+      display: block;
+      width: 100%; }
+      #menu ul li a {
+        display: block;
+        padding: 10px 15px;
+        color: #eeeff7;
+        text-align: right; }
+        #menu ul li a i {
+          color: #ff9326; }
+        #menu ul li a:hover i {
+          color: #ffac59; }
+      #menu ul li:hover {
+        -webkit-box-shadow: 10px 0px 14px -5px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 0px 14px -5px rgba(0, 0, 0, 0.75);
+        box-shadow: 10px 0px 14px -5px rgba(0, 0, 0, 0.75);
+        background: -moz-linear-gradient(left, #445878 40%, #2c394e 100%);
+        background: -webkit-gradient(left top, right top, color-stop(40%, #445878), color-stop(100%, #2c394e));
+        background: -webkit-linear-gradient(left, #445878 40%, #2c394e 100%);
+        background: -o-linear-gradient(left, #445878, #2c394e 100%);
+        background: -ms-linear-gradient(left, #445878 40%, #2c394e 100%);
+        background: linear-gradient(to right, #445878 40%, #2c394e 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$sidebar', endColorstr='darken($sidebar, 13%) ', GradientType=1 );
+        transition: all .3s ease;
+        margin-right: -1px;
+        margin-left: 2px; } }
+.category-layout {
+  text-align: center; }
+  .category-layout .all-projects-list {
+    display: inline-block;
+    margin: 5px; }
+    .category-layout .all-projects-list article h2.entry-title {
+      font-size: 1.5em;
+      margin: 5px 0 40px;
+      background: #445878;
+      width: 309px;
+      display: inline-block;
+      text-align: center;
+      padding: 5px 0; }
+      .category-layout .all-projects-list article h2.entry-title a {
+        color: #eeeff7; }
+    .category-layout .all-projects-list article p {
+      display: none; }
 
 nav#mega-dropdown {
   background: #544832;

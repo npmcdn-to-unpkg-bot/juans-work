@@ -56,7 +56,7 @@
 			<ul>
 				<li><a href="https://www.linkedin.com/in/juanarciniega" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
 				<li><a href="https://github.com/arcinjuan" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a></li>
-				<li><a href="/juans-work/wp-content/themes/blankslate/juan_arciniega.pdf" target="_blank"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Resume</a></li>
+				<li><a href="http://www.juans.work/wp-content/themes/blankslate/Juan_Arciniega.pdf" target="_blank"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Resume</a></li>
 			</ul>
 		</nav>
 		<div id="decoration"></div>
