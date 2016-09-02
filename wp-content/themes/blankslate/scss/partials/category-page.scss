@@ -1,0 +1,25 @@
+//
+.category-layout{
+	text-align:center;
+	.all-projects-list{
+		display:inline-block;
+		margin:5px;
+		article{
+			h2.entry-title{
+				font-size:1.5em;
+				margin:5px 0 40px;
+				background: $sidebar;
+				width: 309px;
+				display:inline-block;
+				text-align:center;
+				padding:5px 0;
+				a{
+					color: $white;
+				}
+			}
+			p{
+				display:none;
+			}
+		}
+	}
+}

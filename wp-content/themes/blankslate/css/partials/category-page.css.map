@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,kBAAkB;EACjB,UAAU,EAAC,MAAM;EAEhB,yCAAc;IACb,SAAS,EAAC,KAAK;IACf,MAAM,EAAC,UAAU;EAElB,4BAAC;IACA,OAAO,EAAC,IAAI",
+"sources": ["../../scss/partials/category-page.scss"],
+"names": [],
+"file": "category-page.css"
+}
