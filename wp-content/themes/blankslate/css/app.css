@@ -4216,7 +4216,7 @@ table.hover tr:nth-of-type(even):hover {
     -webkit-transform: rotate(-20deg);
     /* Safari */
     transform: rotate(-20deg);
-    transition: all 0.5s ease; }
+    transition: all 0.5s cubic-bezier(0.5, -1, 0.05, 0.98); }
   #branding a #logo {
     border: 1px solid #445878;
     height: 100%;
