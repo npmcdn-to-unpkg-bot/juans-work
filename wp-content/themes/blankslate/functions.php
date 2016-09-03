@@ -25,6 +25,8 @@ function blankslate_load_scripts()
 	wp_enqueue_script( 'foundation', get_template_directory_uri() . '/js/vendor/foundation.min.js', 'jq', ' ', true);
 	// load custom js
 	wp_enqueue_script( 'app', get_template_directory_uri() . '/js/app.js', 'jquery', ' ', true);
+	// load skrollr
+	wp_enqueue_script( 'skrollr', get_template_directory_uri() . '/js/skrollr.min.js', ' ', ' ', true);
 }
 add_action( 'comment_form_before', 'blankslate_enqueue_comment_reply_script' );
 function blankslate_enqueue_comment_reply_script()
