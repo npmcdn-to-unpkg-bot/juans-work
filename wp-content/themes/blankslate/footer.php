@@ -7,5 +7,16 @@
 </footer>
 </div>
 <?php wp_footer(); ?>
+<script type="text/javascript">
+	var s = skrollr.init({
+		edgeStrategy: 'set',
+		easing: {
+			WTF: Math.random,
+			inverted: function(p) {
+				return 1-p;
+			}
+		}
+	});
+</script>
 </body>
 </html>
