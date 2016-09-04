@@ -84,3 +84,8 @@ properOrder();
 // if we hit the end or beginning of the list, set the proper pattern
 properRotate();
 });
+
+
+// Lettering
+$(".font-tastic").lettering();
+
