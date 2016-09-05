@@ -2,70 +2,55 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width" />
-<!-- <link rel="stylesheet" type="text/css" href=" http://www.juans.work/wp-content/themes/blankslate/style.css" /> -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<!-- <link rel="stylesheet" type="text/css" href="http://localhost:8000/juans-work/wp-content/themes/blankslate/style.css"> -->
 <link href="https://fonts.googleapis.com/css?family=Teko:600|Khula:800|Wire+One" rel="stylesheet">
-<link href="examples/fixed-positioning.css" rel="stylesheet" type="text/css" />
-	<link href="examples/main.css" rel="stylesheet" type="text/css" />
-<script src="https://use.fontawesome.com/8465e8689d.js"></script>
-<title>Juans Work &#8211; Check it Out</title>
-<!-- <link rel='stylesheet' id='app-css'  href='http://juans.work/wp-content/themes/blankslate/css/app.css' type='text/css' media='all' /> -->
-</head>
-<body class="home page page-id-2 page-template-default">
+<script src="https://use.fontawesome.com/8465e8689d.js"></script><script src="https://cdn.fontawesome.com:443/js/stats.js"></script><link rel="stylesheet" href="https://use.fontawesome.com/8465e8689d.css" media="all">
+<title>Skrollr – Juans Work</title>
+<link rel="dns-prefetch" href="//s.w.org">
+<link rel="alternate" type="application/rss+xml" title="Juans Work » Feed" href="http://localhost:8000/juans-work/feed/">
+<link rel="alternate" type="application/rss+xml" title="Juans Work » Comments Feed" href="http://localhost:8000/juans-work/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Juans Work » Skrollr Comments Feed" href="http://localhost:8000/juans-work/2016/09/04/skrollr/feed/">
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="foundation-css" href="http://localhost:8000/juans-work/wp-content/themes/blankslate/css/foundation.css?ver=1.1" type="text/css" media="all">
+<link rel="stylesheet" id="app-css" href="http://localhost:8000/juans-work/wp-content/themes/blankslate/css/app.css?ver=1.1" type="text/css" media="all">
+<link rel="https://api.w.org/" href="http://localhost:8000/juans-work/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://localhost:8000/juans-work/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://localhost:8000/juans-work/wp-includes/wlwmanifest.xml"> 
+<link rel="prev" title="Font-tastic Styles" href="http://localhost:8000/juans-work/2016/09/04/font-tastic-styles/">
+<meta name="generator" content="WordPress 4.6">
+<link rel="canonical" href="http://localhost:8000/juans-work/2016/09/04/skrollr/">
+<link rel="shortlink" href="http://localhost:8000/juans-work/?p=99">
+<link rel="alternate" type="application/json+oembed" href="http://localhost:8000/juans-work/wp-json/oembed/1.0/embed?url=http%3A%2F%2Flocalhost%3A8000%2Fjuans-work%2F2016%2F09%2F04%2Fskrollr%2F">
+<link rel="alternate" type="text/xml+oembed" href="http://localhost:8000/juans-work/wp-json/oembed/1.0/embed?url=http%3A%2F%2Flocalhost%3A8000%2Fjuans-work%2F2016%2F09%2F04%2Fskrollr%2F&amp;format=xml">
+<style type="text/css" media="print">#wpadminbar { display:none; }</style>
+<style type="text/css" media="screen">
+	html { margin-top: 0px !important; }
+	* html body { margin-top: 0px !important; }
+	@media screen and ( max-width: auto;) {
+		html { margin-top: 0px !important; }
+		* html body { margin-top: 0px !important; }
+	}
+</style>
+<style type="text/css" id="syntaxhighlighteranchor"></style>
+<style type="text/css">.j-slider, .slides {width: undefinedpx; height: undefinedpx;overflow:visible}</style></head>
+<body class="home page page-id-2 page-template-default postid-99">
 <div id="wrapper" class="hfeed">
-	<header id="header" role="banner">
-		<section id="branding">
-			<a href=" http://www.juans.work/" title="Juans Work" rel="home">
-				<div id="logo">
-					<div id="site-title">Juans Work<span>'</span></div>
-					<div id="site-description">Check it Out</div>
-				</div>
-			</a>
-		</section>
-		<div class="text-fade">
-		<p>$(document).ready( function(){ <br />
-		// Find the width of the images<br />
-		 var imgWidth = $(&quot;.j-slider li img&quot;).width(); <br />
-		 var imgHeight = $(&quot;.j-slider li img&quot;).height();  <br />
-		 // Turn all li's into slides  <br />
-		 $(&quot;.j-slider li&quot;).addClass(&quot;slider-image slides&quot;);  <br />
-		 // Add the height and width to the gallery based in the image dimensions  <br />
-		 // Add the proper classes to maintain order <br />
-		 var properOrder = function(){ <br />
-		 // Add a class of next slide to the next slide <br />
-		 $(&quot;.active&quot;).next(&quot;li&quot;).addClass(&quot;next-slide&quot;); <br />
-		 // Add a class of previous-slide slide to the previous slide <br />
-		 $(&quot;.active&quot;).prev(&quot;li&quot;).addClass(&quot;previous-slide&quot;); } <br />
-		 // Set prev to last li when first li is active <br />
-		 var properRotate = function(){ <br />
-		 // Locate the first image <br />
-		 var firstImg = $(&quot;.j-slider li:first-of-type&quot;); <br />
-		 // Locate last image var lastImg = $(&quot;.j-slider li:last-of-type&quot;); <br />
-		 // Switch classes depending on direction of slide <br />
-		 if ($(firstImg).hasClass(&quot;active&quot;)){ <br />
-		 $(lastImg).addClass(&quot;previous-slide&quot;); <br />
-		 } <br />
-		 // Switch classes depending on direction of slide <br />
-		 if ($(lastImg).hasClass(&quot;active&quot;)){ <br />
-		 $(firstImg).addClass(&quot;next-slide&quot;); } <br />
-		 } <br />
-		 // Clear all inline styles <br />
-		 var clearInline = function(){ <br />
-		 $(&quot;.next-slide&quot;).css(&quot;left&quot;, &quot;auto&quot;); <br />
-		 }</p>
-		<div class="fade"></div>
-		</div>
-		<nav id="menu" role="navigation">
-			<ul>
-				<li><a href="https://www.linkedin.com/in/juanarciniega" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
-				<li><a href="https://github.com/arcinjuan" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a></li>
-				<li><a href="http://www.juans.work/wp-content/themes/blankslate/Juan_Arciniega.pdf" target="_blank"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Resume</a></li>
-			</ul>
-		</nav>
-		<div id="decoration"></div>
-		<div id="decoration2"></div>
-	</header>
+	
 	<div id="container">
 		<aside id="sidebar" role="complementary">
 			<div id="primary" class="widget-area">
@@ -85,7 +70,56 @@
 		<div class="row content-wrap">
 			<div class="small-12 columns">
 				<section id="content" role="main">
-<div id="bg1" data-0="background-position:0px 0px;" data-end="background-position:-500px -10000px;"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					<div class="parallax-welcome" data-100="opacity:1;transform:rotate(0deg);transform-origin:0 0;" data-5="opacity:0;ransform:rotate(-90deg);">
+						<h3 class="text-center">Welcome to a sample of Parallax goodness...</h3>
+						please scroll down for all the action.
+					</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div id="bg1" data-0="background-position:0px 0px;" data-end="background-position:-500px -10000px;"></div>
 	<div id="bg2" data-0="background-position:0px 0px;" data-end="background-position:-500px -8000px;"></div>
 	<div id="bg3" data-0="background-position:0px 0px;" data-end="background-position:-500px -6000px;"></div>
 
@@ -139,10 +173,10 @@
 				</section>
 			</div>
 		</div>
-		<div class="clear"></div>
+		<div class="clear"></div> 
 	</div>
 <footer id="footer" role="contentinfo">
-<div id="copyright">
+<div id="copyright"> -->
 <!-- &copy; 2016 Juans Work. All Rights Reserved. Theme By: <a href="http://tidythemes.com/">TidyThemes</a>. -->
 </div> 
 </footer>

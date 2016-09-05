@@ -34,6 +34,11 @@
 
 
 @media screen and (min-width: 1000px) {
+	    body.postid-99{
+	        header#header{
+	            position:fixed;
+	        }
+	    }
 	#header{
 		order:1;
 		min-height:100vh;

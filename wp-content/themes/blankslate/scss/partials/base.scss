@@ -3,9 +3,6 @@ body{
 	background: $white;
 	color:$grey;
 	max-height:100%;
-    &.postid-99{
-        max-height: 80000px!important;
-    }
 }
 html{
     height:100vh!important;
@@ -108,10 +105,20 @@ ul.lcp_catlist {
 .post-edit-link{ display:none;}
 #wpadminbar{ display:none;}
 
+$parallex-height : 800000px!important;
 @media screen and (min-width: 1000px) {
     body.postid-99{
-        header#header{
-            position:fixed;
+        height:$parallex-height;
+        max-height:$parallex-height;
+        #container{
+            height: $parallex-height;
+        max-height:$parallex-height;
+            margin-left: 20rem;
+        }
+        #wrapper{
+            height: $parallex-height;
+        max-height:$parallex-height;
+
         }
     }
     #wrapper{

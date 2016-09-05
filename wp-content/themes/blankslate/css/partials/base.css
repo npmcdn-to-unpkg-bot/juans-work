@@ -7,9 +7,9 @@ Error: Undefined variable: "$white".
 3: 	background: $white;
 4: 	color:$grey;
 5: 	max-height:100%;
-6:     &.postid-99{
-7:         max-height: 80000px!important;
-8:     }
+6: }
+7: html{
+8:     height:100vh!important;
 
 Backtrace:
 scss/partials/base.scss:3
@@ -65,4 +65,4 @@ scss/partials/base.scss:3
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$white\".\A         on line 3 of scss/partials/base.scss\A \A 1: //These are the base styles\A 2: body{\A 3: 	background: $white;\A 4: 	color:$grey;\A 5: 	max-height:100%;\A 6:     &.postid-99{\A 7:         max-height: 80000px!important;\A 8:     }"; }
+  content: "Error: Undefined variable: \"$white\".\A         on line 3 of scss/partials/base.scss\A \A 1: //These are the base styles\A 2: body{\A 3: 	background: $white;\A 4: 	color:$grey;\A 5: 	max-height:100%;\A 6: }\A 7: html{\A 8:     height:100vh!important;"; }
