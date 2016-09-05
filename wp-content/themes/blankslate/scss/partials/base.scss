@@ -3,6 +3,9 @@ body{
 	background: $white;
 	color:$grey;
 	max-height:100%;
+    &.postid-99{
+        max-height: 80000px!important;
+    }
 }
 html{
     height:100vh!important;
@@ -106,6 +109,11 @@ ul.lcp_catlist {
 #wpadminbar{ display:none;}
 
 @media screen and (min-width: 1000px) {
+    body.postid-99{
+        header#header{
+            position:fixed;
+        }
+    }
     #wrapper{
         display: -webkit-box;
         display: -webkit-flex;

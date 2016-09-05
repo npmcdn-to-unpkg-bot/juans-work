@@ -23,12 +23,10 @@ function blankslate_load_scripts()
 	wp_enqueue_script( 'jq', get_template_directory_uri() . '/js/vendor/jquery-3.1.0.min.js', ' ', ' ', true);
 	// load Zurb Foundation
 	wp_enqueue_script( 'foundation', get_template_directory_uri() . '/js/vendor/foundation.min.js', 'jq', ' ', true);
+	// load skrollr
+	wp_enqueue_script( 'skrollr', get_template_directory_uri() . '/js/skrollr.min.js', ' ', ' ', true);
 	// load custom js
-	wp_enqueue_script( 'app', get_template_directory_uri() . '/js/app.js', 'jq', ' ', true);
-	// load skrollr
-	wp_enqueue_script( 'skrollr', get_template_directory_uri() . '/js/skrollr.min.js', 'jq', ' ', true);
-	// load skrollr
-	wp_enqueue_script( 'lettering', get_template_directory_uri() . '/js/lettering.js', 'jq', ' ', true);
+	wp_enqueue_script( 'app', get_template_directory_uri() . '/js/app.js', 'jquery', ' ', true);
 }
 add_action( 'comment_form_before', 'blankslate_enqueue_comment_reply_script' );
 function blankslate_enqueue_comment_reply_script()

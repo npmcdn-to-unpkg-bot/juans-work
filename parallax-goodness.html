@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<!-- <link rel="stylesheet" type="text/css" href=" http://www.juans.work/wp-content/themes/blankslate/style.css" /> -->
+<link href="https://fonts.googleapis.com/css?family=Teko:600|Khula:800|Wire+One" rel="stylesheet">
+<link href="examples/fixed-positioning.css" rel="stylesheet" type="text/css" />
+	<link href="examples/main.css" rel="stylesheet" type="text/css" />
+<script src="https://use.fontawesome.com/8465e8689d.js"></script>
+<title>Juans Work &#8211; Check it Out</title>
+<!-- <link rel='stylesheet' id='app-css'  href='http://juans.work/wp-content/themes/blankslate/css/app.css' type='text/css' media='all' /> -->
+</head>
+<body class="home page page-id-2 page-template-default">
+<div id="wrapper" class="hfeed">
+	<header id="header" role="banner">
+		<section id="branding">
+			<a href=" http://www.juans.work/" title="Juans Work" rel="home">
+				<div id="logo">
+					<div id="site-title">Juans Work<span>'</span></div>
+					<div id="site-description">Check it Out</div>
+				</div>
+			</a>
+		</section>
+		<div class="text-fade">
+		<p>$(document).ready( function(){ <br />
+		// Find the width of the images<br />
+		 var imgWidth = $(&quot;.j-slider li img&quot;).width(); <br />
+		 var imgHeight = $(&quot;.j-slider li img&quot;).height();  <br />
+		 // Turn all li's into slides  <br />
+		 $(&quot;.j-slider li&quot;).addClass(&quot;slider-image slides&quot;);  <br />
+		 // Add the height and width to the gallery based in the image dimensions  <br />
+		 // Add the proper classes to maintain order <br />
+		 var properOrder = function(){ <br />
+		 // Add a class of next slide to the next slide <br />
+		 $(&quot;.active&quot;).next(&quot;li&quot;).addClass(&quot;next-slide&quot;); <br />
+		 // Add a class of previous-slide slide to the previous slide <br />
+		 $(&quot;.active&quot;).prev(&quot;li&quot;).addClass(&quot;previous-slide&quot;); } <br />
+		 // Set prev to last li when first li is active <br />
+		 var properRotate = function(){ <br />
+		 // Locate the first image <br />
+		 var firstImg = $(&quot;.j-slider li:first-of-type&quot;); <br />
+		 // Locate last image var lastImg = $(&quot;.j-slider li:last-of-type&quot;); <br />
+		 // Switch classes depending on direction of slide <br />
+		 if ($(firstImg).hasClass(&quot;active&quot;)){ <br />
+		 $(lastImg).addClass(&quot;previous-slide&quot;); <br />
+		 } <br />
+		 // Switch classes depending on direction of slide <br />
+		 if ($(lastImg).hasClass(&quot;active&quot;)){ <br />
+		 $(firstImg).addClass(&quot;next-slide&quot;); } <br />
+		 } <br />
+		 // Clear all inline styles <br />
+		 var clearInline = function(){ <br />
+		 $(&quot;.next-slide&quot;).css(&quot;left&quot;, &quot;auto&quot;); <br />
+		 }</p>
+		<div class="fade"></div>
+		</div>
+		<nav id="menu" role="navigation">
+			<ul>
+				<li><a href="https://www.linkedin.com/in/juanarciniega" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+				<li><a href="https://github.com/arcinjuan" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a></li>
+				<li><a href="http://www.juans.work/wp-content/themes/blankslate/Juan_Arciniega.pdf" target="_blank"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Resume</a></li>
+			</ul>
+		</nav>
+		<div id="decoration"></div>
+		<div id="decoration2"></div>
+	</header>
+	<div id="container">
+		<aside id="sidebar" role="complementary">
+			<div id="primary" class="widget-area">
+				<ul class="sidebar-widgets">
+					<li id="nav_menu-2" class="widget-container widget_nav_menu">
+						<div class="menu-work-categories-container">
+							<ul id="menu-work-categories" class="menu">
+								<li id="menu-item-67" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-67">
+									<a href="http://www.juans.work/category/uncategorized/">View All Work</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</aside>
+		<div class="row content-wrap">
+			<div class="small-12 columns">
+				<section id="content" role="main">
+<div id="bg1" data-0="background-position:0px 0px;" data-end="background-position:-500px -10000px;"></div>
+	<div id="bg2" data-0="background-position:0px 0px;" data-end="background-position:-500px -8000px;"></div>
+	<div id="bg3" data-0="background-position:0px 0px;" data-end="background-position:-500px -6000px;"></div>
+
+	<div id="progress" data-0="width:0%;background:hsl(200, 100%, 50%);" data-end="width:100%;background:hsl(920, 100%, 50%);"></div>
+
+	<div id="intro" data-0="opacity:1;top:3%;transform:rotate(0deg);transform-origin:0 0;" data-500="opacity:0;top:-10%;transform:rotate(-90deg);">
+		<h1><a href="https://github.com/Prinzhorn/skrollr">skrollr</a></h1>
+		<h2>parallax scrolling for the masses</h2>
+		<p>let's get scrollin' ;-)</p>
+		<p class="arrows">▼&nbsp;▼&nbsp;▼</p>
+	</div>
+
+	<div id="transform" data-500="transform:scale(0) rotate(0deg);" data-1000="transform:scale(1) rotate(1440deg);opacity:1;" data-1600="" data-1700="transform:scale(5) rotate(3240deg);opacity:0;">
+		<h2>transform</h2>
+		<p>scale, skew and rotate the sh** out of any element</p>
+	</div>
+
+	<div id="properties" data-1700="top:100%;" data-2200="top:0%;" data-3000="display:block;" data-3700="top:-100%;display:none;">
+		<h2>all numeric properties</h2>
+		<p>width, height, padding, font-size, z-index, blah blah blah</p>
+	</div>
+
+	<div id="easing_wrapper" data-0="display:none;" data-3900="display:block;" data-4900="background:rgba(0, 0, 0, 0);color[swing]:rgb(0,0,0);" data-5900="background:rgba(0,0,0,1);color:rgb(255,255,255);" data-10000="top:0%;" data-12000="top:-100%;">
+		<div id="easing" data-3900="left:100%" data-4600="left:25%;">
+			<h2>easing?</h2>
+			<p>sure.</p>
+			<p>let me dim the <span data-3900="" data-4900="color[swing]:rgb(0,0,0);" data-5900="color:rgb(255,255,0);">lights</span> for this one...</p>
+			<p data-5900="opacity:0;font-size:100%;" data-6500="opacity:1;font-size:150%;">you can set easings for each property and define own easing functions</p>
+		</div>
+
+		<div class="drop" data-6500="left:15%;bottom:100%;" data-9500="bottom:0%;">linear</div>
+		<div class="drop" data-6500="left:25%;bottom[quadratic]:100%;" data-9500="bottom:0%;">quadratic</div>
+		<div class="drop" data-6500="left:35%;bottom[cubic]:100%;" data-9500="bottom:0%;">cubic</div>
+		<div class="drop" data-6500="left:45%;bottom[swing]:100%;" data-9500="bottom:0%;">swing</div>
+		<div class="drop" data-6500="left:55%;bottom[WTF]:100%;" data-9500="bottom:0%;">WTF</div>
+		<div class="drop" data-6500="left:65%;bottom[inverted]:100%;" data-9500="bottom:0%;">inverted</div>
+		<div class="drop" data-6500="left:75%;bottom[bounce]:100%;" data-9500="bottom:0%;">bounce</div>
+	</div>
+
+	<div id="download" data-10000="top[cubic]:100%;border-radius[cubic]:0em;background:rgb(0,50,100);border-width:0px;" data-12000="top:10%;border-radius:2em;background:rgb(190,230,255);border-width:10px;">
+		<h2>the end</h2>
+		<p>by the way, you can also animate colors (you did notice this, didn't you?)</p>
+		<p><strong>Now get this thing on <a href="https://github.com/Prinzhorn/skrollr">GitHub</a> and spread the word, it's open source!</strong> <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://prinzhorn.github.com/skrollr/" data-via="Prinzhorn">Tweet</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>
+		<p>Check out more <a href="https://github.com/Prinzhorn/skrollr/tree/master/examples#examples">examples</a>.</p>
+		<p>Handcrafted by <a href="https://twitter.com/Prinzhorn" class="twitter-follow-button" data-show-count="false">Follow @Prinzhorn</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>
+	</div>
+
+	<div id="scrollbar" data-0="top:0%;margin-top:2px;" data-end="top:100%;margin-top:-52px;"></div>
+				</section>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+<footer id="footer" role="contentinfo">
+<div id="copyright">
+<!-- &copy; 2016 Juans Work. All Rights Reserved. Theme By: <a href="http://tidythemes.com/">TidyThemes</a>. -->
+</div> 
+</footer>
+</div>
+<script type='text/javascript' src=' http://www.juans.work/wp-content/themes/blankslate/js/vendor/jquery-3.1.0.min.js?ver=%20'></script>
+<script type='text/javascript' src=' http://www.juans.work/wp-content/themes/blankslate/js/skrollr.min.js?ver=%20'></script>
+<script type='text/javascript' src=' http://www.juans.work/wp-content/themes/blankslate/js/app.js?ver=%20'></script>
+<script type="text/javascript">
+	var s = skrollr.init({
+		edgeStrategy: 'set',
+		easing: {
+			WTF: Math.random,
+			inverted: function(p) {
+				return 1-p;
+			}
+		}
+	});
+</script>
+</body>
+</html> 
