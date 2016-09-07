@@ -1,24 +1,82 @@
-.parallax-welcome {
-  height: 100px;
-  background: #fff;
-  margin-top: 20px;
-  border-radius: 5px;
-  margin-bottom: 20px;
-  text-align: center;
-  padding: 20px; }
+/*
+Error: Undefined variable: "$orange".
+        on line 30 of scss/partials/projects/skrollr.scss
 
-.parallax-bg-1 {
-  background-image: url(http://localhost:8000/juans-work/wp-content/uploads/2016/09/parallax-bg-1.jpg);
-  height: 600px;
-  margin-bottom: 4000px;
-  width: 100%;
-  color: #fff;
-  font-weight: bold;
-  font-size: 34px;
-  padding: 35px;
-  opacity: 0; }
+25: 	.bg-1-text{
+26: 	    position: absolute;
+27: 	    left: 40px;
+28: 	    z-index: 40;
+29: 	    text-shadow: -3px 0px 1px black;
+30: 	    color: $orange;
+31: 	    font-weight: 800;
+32: 	}
+33: }
+34: 
+35: .bg-1-message {
 
-.bg-1-message {
-  position: absolute; }
-
-/*# sourceMappingURL=skrollr.css.map */
+Backtrace:
+scss/partials/projects/skrollr.scss:30
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `map'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `map'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:159:in `visit'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:331:in `block in watch'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `call'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:254:in `call'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$orange\".\A         on line 30 of scss/partials/projects/skrollr.scss\A \A 25: 	.bg-1-text{\A 26: 	    position: absolute;\A 27: 	    left: 40px;\A 28: 	    z-index: 40;\A 29: 	    text-shadow: -3px 0px 1px black;\A 30: 	    color: $orange;\A 31: 	    font-weight: 800;\A 32: 	}\A 33: }\A 34: \A 35: .bg-1-message {"; }
