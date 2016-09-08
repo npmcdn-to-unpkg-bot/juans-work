@@ -91,6 +91,16 @@ a {
   overflow: hidden;
   padding-bottom: 60px; }
 
+a.download-btn {
+  background-color: #ff9326;
+  padding: 20px;
+  border-radius: 10px;
+  float: right;
+  margin: 10px;
+  color: #fff; }
+  a.download-btn:hover {
+    background: #ffac59; }
+
 ul.tech-logos {
   margin: 0;
   padding: 0;
@@ -220,7 +230,7 @@ ul.lcp_catlist {
   position: relative; }
 
 .text-fade {
-  color: #a9aed6;
+  color: rgba(45, 59, 82, 0.5);
   font-size: 12px;
   position: relative;
   overflow: hidden;
