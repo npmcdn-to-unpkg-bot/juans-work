@@ -29,6 +29,17 @@ a{
     overflow:hidden;
     padding-bottom:60px;
 }
+a.download-btn {
+    background-color: #ff9326;
+    padding: 20px;
+    border-radius: 10px;
+    float: right;
+    margin: 10px;
+    color: #fff;
+    &:hover{
+        background:lighten($accent, 10%);
+    }
+}
 
 ul.tech-logos{
     margin:0;
