@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>react-test</title>
+</head>
+<body>
+	<div id="app">
+		<!-- my app renders here -->
+	</div>
+	<script src="build/react.js"></script>
+	<script src="build/react-dom.js"></script>
+	<script>
+		// my app's code
+		ReactDOM.render(
+			React.DOM.p(null, "Welcome to my site"),
+			document.getElementById("app")
+		);
+	</script>
+</body>
+</html>
