@@ -1,68 +1,70 @@
-/* the ul will be set to relative to set the images inside of it to absolute */
-.j-slider {
-  position: relative;
-  padding: 0;
-  margin: 20px auto;
-  /* set all images to stack above each other at 
-  the top right corner of the ul. set opacity to 0
-  and transitions to half a second for nice 
-  fade in effect without js */
-  /*  set styles for all spans beginning 
-  with 'j-slide' (to target the buttons) */
-  /* position the buttons */ }
-  .j-slider .slides, .j-slider li {
-    list-style: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 0;
-    margin: 0;
-    transition: left 0.5s ease, opacity 0.3s ease;
-    opacity: 0;
-    /* position the next slide */
-    /* position the previous slide */
-    /* make active slide sit on top visibly */
-    /* ...and after transitions*/ }
-    .j-slider .slides.next-slide, .j-slider li.next-slide {
-      left: 600px;
-      opacity: 0; }
-    .j-slider .slides.previous-slide, .j-slider li.previous-slide {
-      left: -600px;
-      opacity: 0; }
-    .j-slider .slides.active, .j-slider li.active {
-      z-index: 10;
-      opacity: 1;
-      /* position the next slide (during transition) */
-      /* position the previous slide (during transition) */
-      /* make sure non active slides sit back 
-      during transitions... */ }
-      .j-slider .slides.active.next-slide, .j-slider li.active.next-slide {
-        left: 600px;
-        opacity: 0; }
-      .j-slider .slides.active.previous-slide, .j-slider li.active.previous-slide {
-        left: -600px;
-        opacity: 0; }
-      .j-slider .slides.active.previous-slide, .j-slider .slides.active.next-slide, .j-slider li.active.previous-slide, .j-slider li.active.next-slide {
-        z-index: 9; }
-    .j-slider .slides.previous-slide, .j-slider .slides.next-slide, .j-slider li.previous-slide, .j-slider li.next-slide {
-      z-index: 9; }
-  .j-slider span[class^="j-slide"] {
-    border: 1px solid #333;
-    background: #333;
-    color: #ccc;
-    border-radius: 5px;
-    cursor: pointer;
-    padding: 5px 15px;
-    display: inline-block;
-    position: absolute;
-    bottom: -50px;
-    z-index: 5; }
-    .j-slider span[class^="j-slide"] :hover {
-      color: #333;
-      background: #ccc; }
-  .j-slider .j-slide-back {
-    left: 0; }
-  .j-slider .j-slide-next {
-    right: 0; }
+/*
+Error: Undefined variable: "$sidebar".
+        on line 5 of scss/partials/projects/four-oh-four.scss
 
-/*# sourceMappingURL=four-oh-four.css.map */
+1: // header
+2: 
+3: #header{
+4: 	width:100%;
+5: 	background: $sidebar;
+6: 	padding:1rem;
+7: 	-webkit-box-shadow: 6px 0px 15px -5px rgba(46,46,46,1);
+8: 	-moz-box-shadow: 6px 0px 15px -5px rgba(46,46,46,1);
+9: 	box-shadow: 6px 0px 15px -5px rgba(46,46,46,1);
+10: 	position: relative;	
+
+Backtrace:
+scss/partials/projects/four-oh-four.scss:5
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `map'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:159:in `visit'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:331:in `block in watch'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `call'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:254:in `call'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
+/Users/juanarciniega/.rvm/gems/ruby-2.2.1@global/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$sidebar\".\A         on line 5 of scss/partials/projects/four-oh-four.scss\A \A 1: // header\A 2: \A 3: #header{\A 4: 	width:100%;\A 5: 	background: $sidebar;\A 6: 	padding:1rem;\A 7: 	-webkit-box-shadow: 6px 0px 15px -5px rgba(46,46,46,1);\A 8: 	-moz-box-shadow: 6px 0px 15px -5px rgba(46,46,46,1);\A 9: 	box-shadow: 6px 0px 15px -5px rgba(46,46,46,1);\A 10: 	position: relative;	"; }

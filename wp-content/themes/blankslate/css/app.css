@@ -705,71 +705,70 @@ nav#mega-dropdown {
     width: 100%;
     height: 100%; }
 
-/* the ul will be set to relative to set the images inside of it to absolute */
-.j-slider {
+#header {
+  width: 100%;
+  background: #445878;
+  padding: 1rem;
+  -webkit-box-shadow: 6px 0px 15px -5px #2e2e2e;
+  -moz-box-shadow: 6px 0px 15px -5px #2e2e2e;
+  box-shadow: 6px 0px 15px -5px #2e2e2e;
+  position: relative; }
+
+.text-fade {
+  color: rgba(45, 59, 82, 0.5);
+  font-size: 12px;
   position: relative;
-  padding: 0;
-  margin: 20px auto;
-  /* set all images to stack above each other at 
-  the top right corner of the ul. set opacity to 0
-  and transitions to half a second for nice 
-  fade in effect without js */
-  /*  set styles for all spans beginning 
-  with 'j-slide' (to target the buttons) */
-  /* position the buttons */ }
-  .j-slider .slides, .j-slider li {
-    list-style: none;
+  overflow: hidden;
+  max-height: 30%;
+  z-index: 0;
+  display: none; }
+  .text-fade .fade {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#445878+0,445878+100&0+0,1+100 */
+    background: -moz-linear-gradient(top, rgba(68, 88, 120, 0) 10%, #445878 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(68, 88, 120, 0) 10%, #445878 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(68, 88, 120, 0) 10%, #445878 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00445878', endColorstr='#445878',GradientType=0 );
+    /* IE6-9 */
     position: absolute;
     top: 0;
     left: 0;
-    padding: 0;
-    margin: 0;
-    transition: left 0.5s ease, opacity 0.3s ease;
-    opacity: 0;
-    /* position the next slide */
-    /* position the previous slide */
-    /* make active slide sit on top visibly */
-    /* ...and after transitions*/ }
-    .j-slider .slides.next-slide, .j-slider li.next-slide {
-      left: 600px;
-      opacity: 0; }
-    .j-slider .slides.previous-slide, .j-slider li.previous-slide {
-      left: -600px;
-      opacity: 0; }
-    .j-slider .slides.active, .j-slider li.active {
-      z-index: 10;
-      opacity: 1;
-      /* position the next slide (during transition) */
-      /* position the previous slide (during transition) */
-      /* make sure non active slides sit back 
-      during transitions... */ }
-      .j-slider .slides.active.next-slide, .j-slider li.active.next-slide {
-        left: 600px;
-        opacity: 0; }
-      .j-slider .slides.active.previous-slide, .j-slider li.active.previous-slide {
-        left: -600px;
-        opacity: 0; }
-      .j-slider .slides.active.previous-slide, .j-slider .slides.active.next-slide, .j-slider li.active.previous-slide, .j-slider li.active.next-slide {
-        z-index: 9; }
-    .j-slider .slides.previous-slide, .j-slider .slides.next-slide, .j-slider li.previous-slide, .j-slider li.next-slide {
-      z-index: 9; }
-  .j-slider span[class^="j-slide"] {
-    border: 1px solid #333;
-    background: #333;
-    color: #ccc;
-    border-radius: 5px;
-    cursor: pointer;
-    padding: 5px 15px;
-    display: inline-block;
-    position: absolute;
-    bottom: -50px;
-    z-index: 5; }
-    .j-slider span[class^="j-slide"] :hover {
-      color: #333;
-      background: #ccc; }
-  .j-slider .j-slide-back {
-    left: 0; }
-  .j-slider .j-slide-next {
-    right: 0; }
+    width: 100%;
+    height: 100%; }
+
+@media screen and (min-width: 1000px) {
+  body.postid-99 header#header, body.postid-102 header#header {
+    position: fixed; }
+
+  #header {
+    order: 1;
+    min-height: 100vh;
+    max-height: 100vh;
+    height: 100vh;
+    min-width: 20rem;
+    width: 20rem;
+    max-width: 20rem; }
+    #header .text-fade {
+      display: block; }
+    #header #decoration {
+      width: 0;
+      height: 0;
+      border-left: 0px solid transparent;
+      border-right: 200px solid transparent;
+      border-bottom: 200px solid #1b2426;
+      position: absolute;
+      bottom: 0;
+      left: 0; }
+    #header #decoration2 {
+      width: 0;
+      height: 0;
+      border-left: 120px solid transparent;
+      border-right: 0px solid transparent;
+      border-bottom: 110px solid #1b2426;
+      position: absolute;
+      bottom: 0;
+      right: 0; } }
 
 /*# sourceMappingURL=app.css.map */
